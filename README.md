@@ -1,2 +1,5 @@
 # homebrew-tap
-Private Homebrew tap for personal apps (Orpheus, etc.)
+Private Homebrew tap for personal apps
+
+## Apps
+- Not yet

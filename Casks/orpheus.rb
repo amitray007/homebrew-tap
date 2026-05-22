@@ -1,6 +1,6 @@
 cask "orpheus" do
-  version "0.0.2"
-  sha256 "11702ded9328379bad0b638d9328748028c193198e9337ac0fd79f0cd36398a4"
+  version "0.1.0"
+  sha256 "3e1407587b2b2afec4dfae8ae1633bb431e71ae61ec3eed49f65769a8d5ba6f9"
 
   url "https://github.com/amitray007/orpheus/releases/download/v#{version}/orpheus-#{version}.dmg",
       verified: "github.com/amitray007/orpheus/"

@@ -24,3 +24,7 @@ brew upgrade --cask orpheus
 ## How the tap is updated
 
 Cask files and release binaries are generated and pushed here automatically by each app's release pipeline. Don't hand-edit cask files — the next release will overwrite them.
+
+## Contributing
+
+External contributions are not accepted. Do not open pull requests or issues.

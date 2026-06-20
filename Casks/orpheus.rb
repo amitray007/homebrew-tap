@@ -1,9 +1,9 @@
 cask "orpheus" do
-  version "0.2.0"
-  sha256 "cf1b6124b9fb6d7dd209aa66013c8ad3530863f1f097f8203eb8eebd1c63f761"
+  version "0.2.1"
+  sha256 "df66c7e96542f157192db5c4810112041725f8a4c10ba4db7a453fb2e4bf4886"
 
-  url "https://github.com/amitray007/orpheus/releases/download/v#{version}/orpheus-#{version}.dmg",
-      verified: "github.com/amitray007/orpheus/"
+  url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-v#{version}/orpheus-#{version}.dmg",
+      verified: "github.com/amitray007/homebrew-tap/"
   name "Orpheus"
   desc "Mac IDE built around Claude Code"
   homepage "https://github.com/amitray007/orpheus"

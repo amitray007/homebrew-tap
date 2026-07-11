@@ -1,7 +1,7 @@
 # Homebrew formula TEMPLATE for the silo CLI.
 #
 # This is a template — the release pipeline (`.github/workflows/release.yml` on
-# a `cli-v*` release) renders it (substituting 0.1.2 / https://github.com/amitray007/homebrew-tap/releases/download/cli-v0.1.2/silo-cli-0.1.2.tgz / 49413214d8280f4bf8b76350e59ed3a9857ff5df0c20ab21303164516c94ec38)
+# a `cli-v*` release) renders it (substituting 0.1.3 / https://github.com/amitray007/homebrew-tap/releases/download/cli-v0.1.3/silo-cli-0.1.3.tgz / d3be9232aa09d5978de799499b7e15465f91788400ca92ca6c8f14a047112bb1)
 # and pushes the result to `amitray007/homebrew-tap` as `Formula/silo.rb`. Do
 # NOT hand-edit the rendered formula in the tap — this template is the source.
 #
@@ -18,9 +18,9 @@
 class Silo < Formula
   desc "Terminal client for silo — capture, search, list, and open your links"
   homepage "https://github.com/amitray007/silo"
-  version "0.1.2"
-  url "https://github.com/amitray007/homebrew-tap/releases/download/cli-v0.1.2/silo-cli-0.1.2.tgz"
-  sha256 "49413214d8280f4bf8b76350e59ed3a9857ff5df0c20ab21303164516c94ec38"
+  version "0.1.3"
+  url "https://github.com/amitray007/homebrew-tap/releases/download/cli-v0.1.3/silo-cli-0.1.3.tgz"
+  sha256 "d3be9232aa09d5978de799499b7e15465f91788400ca92ca6c8f14a047112bb1"
   license "MIT"
 
   depends_on "node"

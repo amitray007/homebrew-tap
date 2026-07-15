@@ -2,27 +2,27 @@
 class Loco < Formula
   desc "Local Operator: a durable local runner (cron + services) and event bus"
   homepage "https://github.com/amitray007/loco"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.0/loco_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6aa39ebf2cb6c9030ee160d7ff916d8ad986858acac94971879ed0d48254c2fd"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.1/loco_0.1.1_darwin_arm64.tar.gz"
+      sha256 "f600b5f5a6666a934ec7959d0a1316dcb33c416f66592d681b50f0874b86ea4c"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.0/loco_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d301b642df315181e00961b97d97459921d0366ed7acff6c30c12b45809ca4f7"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.1/loco_0.1.1_darwin_amd64.tar.gz"
+      sha256 "49a8d09000cfce49e53096f84ee4fabf601cea69b6a3621f85e7df0a2149163f"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.0/loco_0.1.0_linux_arm64.tar.gz"
-      sha256 "a713668222c22cf31657ccd093a6eee8a0e3b1f3d45cc88dbaa91b9d8d47905f"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.1/loco_0.1.1_linux_arm64.tar.gz"
+      sha256 "38fba5274bfff4f5e12260b0e5d3cbd9fea5a286101605a44b5298806af7ee26"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.0/loco_0.1.0_linux_amd64.tar.gz"
-      sha256 "cb15721c33196988f59ad27a7e67d784c1dc0d978ee1e87c3c2f78417f6ef8d6"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.1/loco_0.1.1_linux_amd64.tar.gz"
+      sha256 "f394deaa5c9d5f8cddf78262cb9c3e9dc5075aa93067414fcabfe73ff276106b"
     end
   end
 

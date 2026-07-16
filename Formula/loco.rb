@@ -1,9 +1,9 @@
 # Homebrew formula for loco — the Local Operator. Rendered by the release flow; do not hand-edit.
 #
 # Placeholders are substituted by .github/workflows/release-please.yml:
-#   0.1.3            — bare semver, e.g. 0.2.0 (no leading "v")
-#   loco-v0.1.3                — tap release tag, e.g. loco-v0.2.0
-#   2ee3b6c03a18063fb46929db513a48bab73c199d3d854d5544e6b7013daa41c2 etc. — per-artifact checksums from goreleaser's checksums.txt
+#   0.1.4            — bare semver, e.g. 0.2.0 (no leading "v")
+#   loco-v0.1.4                — tap release tag, e.g. loco-v0.2.0
+#   b2e792a61efaf9f4e6508cf825b7a894604c56e09aafa229e73e7be440779518 etc. — per-artifact checksums from goreleaser's checksums.txt
 #
 # Assets are hosted on the PUBLIC amitray007/homebrew-tap release, not on the
 # loco repo's own release: loco is private, so an unauthenticated `brew install`
@@ -13,27 +13,27 @@
 class Loco < Formula
   desc "Local Operator: a durable local runner (cron + services) and event bus"
   homepage "https://github.com/amitray007/loco"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.3/loco_0.1.3_darwin_arm64.tar.gz"
-      sha256 "2ee3b6c03a18063fb46929db513a48bab73c199d3d854d5544e6b7013daa41c2"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.4/loco_0.1.4_darwin_arm64.tar.gz"
+      sha256 "b2e792a61efaf9f4e6508cf825b7a894604c56e09aafa229e73e7be440779518"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.3/loco_0.1.3_darwin_amd64.tar.gz"
-      sha256 "1c237dc9a20cbf000266272c314fd5d08336d34f68b64abf2f53ff9120760410"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.4/loco_0.1.4_darwin_amd64.tar.gz"
+      sha256 "2d775c83bf7c9388a54bc3cee68c324e51060d4b210815e28489374c813165be"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.3/loco_0.1.3_linux_arm64.tar.gz"
-      sha256 "8655bcbf328ab9019daa4c852a2372e67bf23ddaf4e6a97a3b30d42bd46d34b0"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.4/loco_0.1.4_linux_arm64.tar.gz"
+      sha256 "8f74e2104c0b8ab09d34c57dee30d8461145aa956eda3b9aa7d6a370e3fdfafd"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.3/loco_0.1.3_linux_amd64.tar.gz"
-      sha256 "bfb9d15d141fda028492c5a94c0e28d91ce6daf2fa9133f273ea678409958474"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/loco-v0.1.4/loco_0.1.4_linux_amd64.tar.gz"
+      sha256 "adf3096740871c7eb773beea0a74d5687c0f9895ace2dc8532eebd269fb3f5a9"
     end
   end
 

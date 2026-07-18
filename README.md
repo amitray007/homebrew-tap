@@ -12,13 +12,14 @@ brew install --cask orpheus
 
 # CLI tools (formulae)
 brew install amitray007/tap/silo
+brew install amitray007/tap/tracks
 ```
 
 ## Upgrade
 
 ```sh
 brew upgrade --cask orpheus   # apps
-brew upgrade silo             # CLIs
+brew upgrade silo tracks      # CLIs
 ```
 
 ## Casks
@@ -33,9 +34,10 @@ Mac GUI apps.
 
 Command-line tools.
 
-| Formula | What it is                                             |
-| ------- | ----------------------------------------------------- |
-| `silo`  | Terminal client for silo — capture, search, open links |
+| Formula  | What it is                                             |
+| -------- | ------------------------------------------------------ |
+| `silo`   | Terminal client for silo — capture, search, open links  |
+| `tracks` | Local-first viewer for AI coding-agent sessions         |
 
 ## How the tap is updated
 

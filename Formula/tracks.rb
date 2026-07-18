@@ -5,8 +5,8 @@
 class Tracks < Formula
   desc "Local-first viewer and sharing tool for AI coding-agent sessions"
   homepage "https://github.com/amitray007/tracks"
-  url "https://github.com/amitray007/homebrew-tap/releases/download/tracks-cli-v0.1.0/tracks-cli-0.1.0.tgz"
-  sha256 "77c10e1ddbdee07cf0b967093f9eb3a5554824cfaf328fe68d57de8439fa49d0"
+  url "https://github.com/amitray007/homebrew-tap/releases/download/tracks-cli-v0.1.1/tracks-cli-0.1.1.tgz"
+  sha256 "c8ee5e6832012a58a89e9958c3fa6adebf13cef61f363719ced742ca08e586b3"
   license "MIT"
 
   depends_on "node"

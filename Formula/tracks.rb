@@ -6,7 +6,6 @@ class Tracks < Formula
   desc "Local-first viewer and sharing tool for AI coding-agent sessions"
   homepage "https://github.com/amitray007/tracks"
   url "https://github.com/amitray007/homebrew-tap/releases/download/tracks-cli-v0.1.0/tracks-cli-0.1.0.tgz"
-  version "0.1.0"
   sha256 "77c10e1ddbdee07cf0b967093f9eb3a5554824cfaf328fe68d57de8439fa49d0"
   license "MIT"
 

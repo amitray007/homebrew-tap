@@ -13,13 +13,14 @@ brew install --cask orpheus
 # CLI tools (formulae)
 brew install amitray007/tap/silo
 brew install amitray007/tap/tracks
+brew install amitray007/tap/ccstack
 ```
 
 ## Upgrade
 
 ```sh
 brew upgrade --cask orpheus   # apps
-brew upgrade silo tracks      # CLIs
+brew upgrade silo tracks ccstack      # CLIs
 ```
 
 ## Casks
@@ -38,6 +39,7 @@ Command-line tools.
 | -------- | ------------------------------------------------------ |
 | `silo`   | Terminal client for silo — capture, search, open links  |
 | `tracks` | Local-first viewer for AI coding-agent sessions         |
+| `ccstack` | Claude Code configuration control surface                    |
 
 ## How the tap is updated
 

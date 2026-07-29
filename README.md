@@ -35,12 +35,7 @@ Mac GUI apps.
 | Cask               | What it is                                        |
 | ------------------ | ------------------------------------------------- |
 | `orpheus`          | Mac IDE built around Claude Code                   |
-| `orpheus-nightly`  | Orpheus nightly channel, built on demand from `staging` |
-
-`orpheus-nightly` is a **separate app**, not an upgrade path for `orpheus`. It
-installs as `Orpheus Nightly.app` with its own bundle id and its own data
-directory (`~/Library/Application Support/Orpheus Nightly`), so it never reads
-or writes a stable install's database. The two are meant to run side by side.
+| `orpheus-nightly`  | Mac IDE built around Claude Code for Nightly Versions |
 
 ## Formulae
 

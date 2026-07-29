@@ -1,6 +1,6 @@
 cask "orpheus" do
-  version "0.5.7"
-  sha256 "dd161f9718f36097815238f65b9ab57afd9ab3a3afae40d39885c1e6482325cd"
+  version "0.5.8"
+  sha256 "bc7e5c47b44ae7424e647ad8be1eb02d4af22ab9e1779118a1280671144dbca3"
 
   url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-v#{version}/orpheus-#{version}.dmg",
       verified: "github.com/amitray007/homebrew-tap/"

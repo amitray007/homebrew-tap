@@ -1,6 +1,6 @@
 cask "orpheus-nightly" do
-  version "0.5.8-nightly.20260729.0983fbba"
-  sha256 "565f3c0c1f96e820f1ef4b58391c70e2d8556991726a6445132b35f960eac538"
+  version "0.5.8-nightly.20260730.8daef4a7"
+  sha256 "13685935092776f8414613f5e7574c85c61d4c3af8d6eb07361ae9fba31e754b"
 
   url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-nightly-v#{version}/orpheus-nightly-#{version}.dmg",
       verified: "github.com/amitray007/homebrew-tap/"

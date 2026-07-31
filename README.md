@@ -18,6 +18,7 @@ brew install amitray007/tap/silo
 brew install amitray007/tap/tracks
 brew install amitray007/tap/ccstack
 brew install amitray007/tap/loco
+brew install amitray007/tap/brewfast
 ```
 
 ## Upgrade
@@ -25,7 +26,7 @@ brew install amitray007/tap/loco
 ```sh
 brew upgrade --cask orpheus              # apps
 brew upgrade --cask orpheus-nightly      # nightly channel
-brew upgrade silo tracks ccstack loco    # CLIs
+brew upgrade silo tracks ccstack loco brewfast  # CLIs
 ```
 
 ## Casks
@@ -47,6 +48,7 @@ Command-line tools.
 | `tracks`  | Local-first viewer for AI coding-agent sessions        |
 | `ccstack` | Claude Code configuration control surface              |
 | `loco`    | Local Operator: durable cron + service runner and event bus |
+| `brewfast`| Accelerate slow GitHub-asset Homebrew cask downloads via aria2 |
 
 ## How the tap is updated
 

@@ -1,6 +1,6 @@
 cask "orpheus" do
-  version "0.5.10"
-  sha256 "a7468c25a2c10043a689e6361bd234b641084323a0810887294717e7a0075571"
+  version "0.5.11"
+  sha256 "9d79b54b218590a55524ebb3a0fb57980948bb1c0a9c86187ea06f4d81b3874d"
 
   url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-v#{version}/orpheus-#{version}.dmg",
       verified: "github.com/amitray007/homebrew-tap/"
@@ -12,6 +12,13 @@ cask "orpheus" do
   depends_on macos: :sonoma
 
   app "Orpheus.app"
+
+  # Symlinks the in-bundle CLI shim onto PATH (brew manages the link: created on
+  # install, re-pointed on upgrade, removed on uninstall — no privilege prompt).
+  # Path must match electron-builder.yml's extraResources mapping for
+  # resources/bin/orpheus -> Contents/Resources/bin/orpheus; if that mapping ever
+  # moves, update this line too or the symlink dangles.
+  binary "#{appdir}/Orpheus.app/Contents/Resources/bin/orpheus"
 
   # Strip quarantine + re-sign ad-hoc after install so macOS 15+ accepts the bundle.
   # electron-builder leaves inner frameworks with mismatched Team IDs;

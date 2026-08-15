@@ -5,27 +5,27 @@
 class Brewfast < Formula
   desc "Accelerate Homebrew cask installs from throttled GitHub release assets"
   homepage "https://github.com/amitray007/brewfast"
-  version "1.0.4"
+  version "1.0.5"
 
   on_macos do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.4/brewfast-1.0.4-darwin-arm64.tar.gz"
-      sha256 "7faa81a65dc2841a81784dafe85d25c391aece6929145e1531370f5d38d03c7d"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.5/brewfast-1.0.5-darwin-arm64.tar.gz"
+      sha256 "c853fce23f2e74eacb1628d91faec7c8121529e9b94b34ee99d5fc33718d4beb"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.4/brewfast-1.0.4-darwin-x64.tar.gz"
-      sha256 "2750961d95c1f9302bd3143321c2ccb47aa4989cd368e263967dba3d790c7873"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.5/brewfast-1.0.5-darwin-x64.tar.gz"
+      sha256 "04e130d9254064feb4e54a9cc673fdb1a013d7e50e0bf1538df96e0f8070dbd0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.4/brewfast-1.0.4-linux-arm64.tar.gz"
-      sha256 "94dbcb8e923bb5d6b61100e54153f3d580db3d518231f46812f56b51139d59d4"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.5/brewfast-1.0.5-linux-arm64.tar.gz"
+      sha256 "3bc5af9bdec799b96c28799023b16b0fcfffce7e63e95078ec5032319f0af671"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.4/brewfast-1.0.4-linux-x64.tar.gz"
-      sha256 "f54c1636bc1ef834b3a2be1cea3f38f059d6428eb237b1d4a63748188fc3c8b2"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/brewfast-v1.0.5/brewfast-1.0.5-linux-x64.tar.gz"
+      sha256 "dd77685d170e5e9283df2820d34ae1655e560cb6db4cfa5d122503f13e487a37"
     end
   end
 

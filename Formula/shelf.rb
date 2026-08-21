@@ -1,7 +1,7 @@
 # Homebrew formula TEMPLATE for the shelf CLI.
 #
 # This is a template — the release pipeline (.github/workflows/release.yml on a
-# v* release) renders it (substituting 0.1.0 / https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.0/shelf-0.1.0.tgz / 9bdac723be1b45d31297c89b7a7a9577845373d48369e43837b0225297656cc1) and
+# v* release) renders it (substituting 0.1.1 / https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.1/shelf-0.1.1.tgz / 26cb646ef28d58e4b6afec69cdbb17e495dbc8866073e5f0bc42fa3453472568) and
 # pushes the result to amitray007/homebrew-tap as Formula/shelf.rb. Do NOT
 # hand-edit the rendered formula in the tap — this template is the source.
 #
@@ -17,9 +17,9 @@
 class Shelf < Formula
   desc "Publish, version, inspect, and share Shelf artifacts from the terminal"
   homepage "https://github.com/amitray007/shelf"
-  version "0.1.0"
-  url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.0/shelf-0.1.0.tgz"
-  sha256 "9bdac723be1b45d31297c89b7a7a9577845373d48369e43837b0225297656cc1"
+  version "0.1.1"
+  url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.1/shelf-0.1.1.tgz"
+  sha256 "26cb646ef28d58e4b6afec69cdbb17e495dbc8866073e5f0bc42fa3453472568"
   license "MIT"
 
   depends_on "node"

@@ -1,8 +1,8 @@
 cask "pace" do
-  version "0.1.0"
-  sha256 "7e6e503af4efab1f2f7a473f4517a23cad4207e5e3d694eeee2244f992b90adb"
+  version "0.1.1"
+  sha256 "fc93958f63eb6686cf474220a8648c17bfc0115e68d2a21f5ed3cb08046973e2"
 
-  url "https://github.com/amitray007/homebrew-tap/releases/download/pace-v#{version}/Pace-#{version}-2-macos-universal-unsigned.zip",
+  url "https://github.com/amitray007/homebrew-tap/releases/download/pace-v#{version}/Pace-#{version}-3-macos-universal-unsigned.zip",
       verified: "github.com/amitray007/homebrew-tap/"
   name "Pace"
   desc "Menu-bar monitor for AI provider usage limits"

@@ -2,8 +2,7 @@ cask "orpheus-nightly" do
   version "0.5.9-nightly.20260801.a7e7adcb"
   sha256 "b445d11ef8611cc08f6bb26f96fa65c4352d82f0bdf5adc0839771819de9fe0d"
 
-  url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-nightly-v#{version}/orpheus-nightly-#{version}.dmg",
-      verified: "github.com/amitray007/homebrew-tap/"
+  url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-nightly-v#{version}/orpheus-nightly-#{version}.dmg"
   name "Orpheus Nightly"
   desc "Mac IDE built around Claude Code (nightly channel)"
   homepage "https://github.com/amitray007/orpheus"
@@ -20,13 +19,15 @@ cask "orpheus-nightly" do
   # Strip quarantine + re-sign ad-hoc after install so macOS 15+ accepts the bundle.
   # electron-builder leaves inner frameworks with mismatched Team IDs;
   # a unified ad-hoc re-sign normalises them.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Orpheus Nightly.app"],
-                   sudo: false
-    system_command "/usr/bin/codesign",
-                   args: ["--force", "--deep", "--sign", "-", "#{appdir}/Orpheus Nightly.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Orpheus Nightly.app"],
+        writable_paths: ["Orpheus Nightly.app"],
+        writable_base: :appdir
+    run "/usr/bin/codesign",
+        args: ["--force", "--deep", "--sign", "-", "{{appdir}}/Orpheus Nightly.app"],
+        writable_paths: ["Orpheus Nightly.app"],
+        writable_base: :appdir
   end
 
   zap trash: [

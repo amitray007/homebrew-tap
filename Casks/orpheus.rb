@@ -2,8 +2,7 @@ cask "orpheus" do
   version "0.5.14"
   sha256 "cd947643ddbf1a0bc7964c2b4462097f199004741de84c9265e9388dfe900591"
 
-  url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-v#{version}/orpheus-#{version}.dmg",
-      verified: "github.com/amitray007/homebrew-tap/"
+  url "https://github.com/amitray007/homebrew-tap/releases/download/orpheus-v#{version}/orpheus-#{version}.dmg"
   name "Orpheus"
   desc "Mac IDE built around Claude Code"
   homepage "https://github.com/amitray007/orpheus"
@@ -23,13 +22,15 @@ cask "orpheus" do
   # Strip quarantine + re-sign ad-hoc after install so macOS 15+ accepts the bundle.
   # electron-builder leaves inner frameworks with mismatched Team IDs;
   # a unified ad-hoc re-sign normalises them.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Orpheus.app"],
-                   sudo: false
-    system_command "/usr/bin/codesign",
-                   args: ["--force", "--deep", "--sign", "-", "#{appdir}/Orpheus.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Orpheus.app"],
+        writable_paths: ["Orpheus.app"],
+        writable_base: :appdir
+    run "/usr/bin/codesign",
+        args: ["--force", "--deep", "--sign", "-", "{{appdir}}/Orpheus.app"],
+        writable_paths: ["Orpheus.app"],
+        writable_base: :appdir
   end
 
   zap trash: [

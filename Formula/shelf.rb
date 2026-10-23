@@ -1,7 +1,7 @@
 # Homebrew formula TEMPLATE for the shelf CLI.
 #
 # This is a template — the release pipeline (.github/workflows/release.yml)
-# renders it (substituting 0.1.7 and the per-platform {{URL_*}} /
+# renders it (substituting 0.1.8 and the per-platform {{URL_*}} /
 # {{SHA_*}} pairs) and pushes the result to amitray007/homebrew-tap as
 # Formula/shelf.rb. Do NOT hand-edit the rendered formula in the tap — this
 # template is the source.
@@ -18,30 +18,30 @@
 class Shelf < Formula
   desc "Publish, version, inspect, and share Shelf artifacts from the terminal"
   homepage "https://github.com/amitray007/shelf"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   depends_on "node"
 
   on_macos do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.7/shelf-0.1.7-darwin-arm64.tgz"
-      sha256 "1f79a28cedef6e0da706a772bb336919a5a67c0640b965a6aefd5e34127f78c5"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.8/shelf-0.1.8-darwin-arm64.tgz"
+      sha256 "32f80267267076542dac308a699d6a152053ca47434ef8f2af0b6369bab08373"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.7/shelf-0.1.7-darwin-x64.tgz"
-      sha256 "b44b8fb836406930829271c07eb86aaf966d3c62dd458155f8d134cb59a05573"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.8/shelf-0.1.8-darwin-x64.tgz"
+      sha256 "43ee347f135849db3c63318124a63bb245792d1cab83e80546badbb91d76361d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.7/shelf-0.1.7-linux-arm64-gnu.tgz"
-      sha256 "6b2af4f05241d5064ca05c7c1233654923bc0ff703470c84bb88f53dcd499261"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.8/shelf-0.1.8-linux-arm64-gnu.tgz"
+      sha256 "c9875fba379a35cfdc24cd46394d44a135c14b01404453b630642e48e9ee1931"
     end
     on_intel do
-      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.7/shelf-0.1.7-linux-x64-gnu.tgz"
-      sha256 "be2c528d2a948046540a0dfea4ea25d3b9525e016f77dc0674f155f192091724"
+      url "https://github.com/amitray007/homebrew-tap/releases/download/shelf-v0.1.8/shelf-0.1.8-linux-x64-gnu.tgz"
+      sha256 "66ec175c88eb59bd2b4b81a89a769cf909ba8c09534a7bc74318225b3f9cb24f"
     end
   end
 
